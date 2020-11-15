@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>
+        View Transcript
+    </title>
+    <style type="text/css">
+        .water-mark{
+            margin-left: -100px;
+            position: absolute;
+            font-size: 48px;
+            top:0;
+            left: 50%;
+            opacity: 0.5;
+            filter:alpha(opacity=50);
+            height: 100%;
+            text-align: center;
+        }
+
+        @media print {
+        body {
+        display: none;
+        }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="water-mark">
+        <br /><br /><br /><br />
+        Unofficial
+        <br /><br /><br /><br /><br /><br />
+        Unofficial
+        <br /><br /><br /><br /><br /><br />
+        Unofficial
+        <br /><br /><br /><br /><br /><br />
+        Unofficial
+        <br /><br /><br /><br /><br /><br />
+        Unofficial
+        <br /><br /><br /><br /><br /><br />
+        Unofficial
+        <br /><br /><br /><br /><br /><br />
+        Unofficial
+        <br /><br /><br /><br /><br /><br />
+        Unofficial
+        <br /><br /><br /><br /><br /><br />
+        Unofficial
+        <br /><br /><br /><br /><br /><br />
+        Unofficial
+        <br /><br /><br /><br /><br /><br />
+        Unofficial
+        <br /><br /><br /><br /><br /><br />
+        Unofficial
+    </div>
+
+    <div id="transcriptContainer">
+
+    </div>
+
+    <script type="text/javascript">
+        (function(){
+        var tc = document.querySelector("#transcriptContainer");
+        document.getElementById("transcriptContainer").src = window.opener.transcriptHtml;
+        })();
+    </script>
+
+</body>
+</html>
